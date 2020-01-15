@@ -13,7 +13,7 @@ import com.revature.repository.EmployeeDaoPostgres;
 public class EmployeeServlet extends HttpServlet {
 
   @Override                                                              //CHANGED TO GET FOR TESTING
-  protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+  protected void doPost(HttpServletRequest req, HttpServletResponse resp)
       throws ServletException, IOException {
     System.out.println("Employee servlet working");
     

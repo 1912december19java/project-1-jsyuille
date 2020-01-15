@@ -2,7 +2,7 @@ package com.revature.model;
 
 public class Employee {
   
-  private String emp_id;
+  private Integer emp_id;
   private String emp_name;
   private String emp_password;
   
@@ -11,11 +11,15 @@ public class Employee {
     super();
   }
   
+  public Employee(int id, String name, String password) {
+    
+  }
   
-  public String getEmp_id() {
+  
+  public Integer getEmp_id() {
     return emp_id;
   }
-  public void setEmp_id(String emp_id) {
+  public void setEmp_id(Integer emp_id) {
     this.emp_id = emp_id;
   }
   public String getEmp_name() {
