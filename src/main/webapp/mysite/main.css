@@ -1,0 +1,71 @@
+
+.jumbotron.header-color {
+    background-color: rgb(111, 211, 111);
+    margin-bottom: 0px;
+
+}
+
+.jumbotron.manager-header-color {
+    background-color: rgb(224, 147, 47);
+    margin-bottom: 0px;
+
+}
+
+.login-box {
+    background-color: white;
+    width: 400px;
+    height: 400px;
+    /* position: relative;
+    left: 650px;
+    top: 200px; */
+}
+
+.login-info {
+    text-align: center;
+    position: relative;
+    top: 150px;
+
+}
+
+.employee-list {
+    font-size: large;
+    cursor: pointer;
+}
+
+#welcome-login {
+    text-align: center;
+    position: relative;
+    top: 50px;
+    
+}
+
+#welcome-text {
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#new-request-btn {
+    align-content: center;
+}
+
+
+
+#login-body {
+    background-color: rgb(19, 16, 29);
+}
+
+#invalid-login {
+    color: red;
+    text-align: center;
+    position: relative;
+    top: 100px;
+}
+
+#invalid {
+    color: red;
+}
+
+#logout {
+    position: relative;
+    left: 1650px;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Reimbursements</title>
+</head>
+
+<body>
+    <div class="jumbotron header-color">
+        <h1>Employee Portal</h1>
+
+            <div class="row">
+                <div class="col-xl-4">
+                    <a class = "btn btn-dark" href = "login.html" id = "logout">Sign out</a>
+                </div>
+            </div>
+    </div>
+
+    <nav class="navbar navbar-light nav-pills">
+        <ul class="nav navbar-dark" role="navigation">
+            <li class="nav-item">
+                <a class="nav-link" href="EmployeePortal.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link active" href="reimbursementPage.html">View Reimbursements</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="profile.html">Profile</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h6>Submit a New Request</h6>
+            </div>
+        </div>
+        <div class="row">
+            <form id="req-form">
+                <label>Amount</label>
+                <input type="number" id="req-amount">
+                <label>Proof of Purchase</label>
+                <input type="file" id="req-pic">
+                <button id="new-request-btn" type="submit">Submit</button>
+            </form>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-12">
+                <Form id="pending-reqs-tab">
+                    <button class="btn btn-warning" data-toggle="collapse" data-target='#pending-reqs'
+                        type="submit" aria-expanded="false" aria-controls="pending-reqs">
+                        <h6>Pending Requests</h6>
+                    </button>
+                </Form>
+            </div>
+            <div class="collapse" id="pending-reqs">
+                <div class="card card-body" aria-expanded="true">
+                    <!-- This is where pending requests from the server go -->
+                    <div id= "pending-resps"></div>
+                </div>
+            </div>
+            <br>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <Form id="processed-reqs-tab">
+                <button class="btn btn-success" data-toggle="collapse"
+                    data-target='#processed-reqs' type="submit" aria-expanded="false" aria-controls="processed-reqs">
+                    <h6>Processed Requests</h6>
+                </button>
+                </Form>
+            </div>
+        </div>
+
+        <div class="collapse" id="processed-reqs">
+            <div class="card card-body">
+                <!-- This is where processed requests from the server go -->
+                <div id= "processed-resps"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="reimbursementReq.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
